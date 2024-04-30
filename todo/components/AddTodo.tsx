@@ -16,9 +16,9 @@ export default function AddTodo() {
         console.log("setInput",text);
     }
     const deleteItem=(item)=>{
-        console.log("deleteItem",item);
-        const newTodoList=todoList.filter((todo)=>todo!==item);
-        
+        console.log('delete item',item);
+        const newList=todoList.filter((i)=>i!==item);
+        settodoList(newList);
     }
   return (
     <View style={styles.container}>
